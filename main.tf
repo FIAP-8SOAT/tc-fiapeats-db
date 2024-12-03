@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket         = "terraform-backend-fiapeats" # Substitua pelo nome do bucket
-    key            = "state/terraform.tfstate"         # Caminho do estado no bucket
+    key            = "state/fiapeatsdb/terraform.tfstate"         # Caminho do estado no bucket
     region         = "us-east-1"                       # Região do bucket
     encrypt        = true                              # Criptografia no bucket
   }
@@ -38,4 +38,5 @@ resource "aws_db_instance" "default" {
     password             = "fiapeats-pass"
     vpc_security_group_ids = [aws_security_group.default.id]
     skip_final_snapshot  = true
+    publicly_accessible  = true
 }
