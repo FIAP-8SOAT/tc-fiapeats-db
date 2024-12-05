@@ -1,14 +1,6 @@
-terraform {
-  backend "s3" {
-    bucket         = "terraform-backend-fiapeats" # Substitua pelo nome do bucket
-    key            = "state/fiapeatsdb/terraform.tfstate"         # Caminho do estado no bucket
-    region         = "us-east-1"                       # Região do bucket
-    encrypt        = true                              # Criptografia no bucket
-  }
-}
-
 provider "aws" {
-    region = "us-east-1"  # Substitua pela região desejada
+  region  = "us-east-1"
+  profile = "fiapeats"
 }
 
 data "aws_vpc" "default" {
