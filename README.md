@@ -111,9 +111,15 @@ Relaciona os produtos aos pedidos.
 
 ## Como Executar o Banco de Dados
 
+Este repositório tem como objetivo criar somente a infraestrutura do banco de dados na AWS RDS. Para executá-lo localmente, siga os seguintes passos:
+
 1. **Configuração do PostgreSQL**
-   - Instale o PostgreSQL em sua máquina ou utilize um serviço em nuvem como o AWS RDS ou Heroku.
+   - Instale o PostgreSQL em sua máquina.
 
 2. **Criação do Banco de Dados**
    ```sql
-   CREATE DATABASE fastfood;
+   CREATE DATABASE fiapeatsdb;
+
+2. **Execução dos scripts**
+    - Execute o script sql 1_schema.sql para criação das tabelas e relacionamentos
+    - Execute o script 2_data.sql para popular as tabelas com uma carga inicial de dados
