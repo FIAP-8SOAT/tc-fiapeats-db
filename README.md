@@ -17,6 +17,29 @@ A solução proposta é um sistema de autoatendimento que permita aos clientes r
 
 ---
 
+## Por que um Banco de Dados Relacional?
+
+Para este projeto, optamos por utilizar um banco de dados relacional devido aos seguintes motivos:
+
+### 1. **Estruturação de Dados**
+Bancos de dados relacionais oferecem uma estrutura bem definida com tabelas, colunas e relacionamentos. Isso permite organizar os dados de forma lógica e eficiente, essencial para gerenciar informações como pedidos, produtos, clientes e categorias.
+
+### 2. **Integridade dos Dados**
+Os bancos de dados relacionais garantem a integridade dos dados por meio de restrições como chaves primárias e estrangeiras. Isso assegura que relacionamentos, como entre pedidos e produtos, sejam mantidos corretamente.
+
+### 3. **Consultas Avançadas**
+Com a linguagem SQL, podemos realizar consultas complexas e detalhadas, permitindo recuperar informações específicas e gerar relatórios úteis para a gestão do negócio.
+
+### 4. **Escalabilidade Vertical**
+Embora sistemas relacionais possam ter limitações em grandes volumes distribuídos, eles são altamente eficazes em escalabilidade vertical, o que atende perfeitamente ao caso de uma lanchonete em expansão.
+
+### 5. **Conformidade com Transações**
+A conformidade com o modelo ACID (Atomicidade, Consistência, Isolamento e Durabilidade) é fundamental para garantir que as operações no banco de dados, como registros de pedidos, sejam realizadas de forma confiável e sem inconsistências.
+
+Com essas características, um banco de dados relacional é a escolha ideal para garantir a organização, confiabilidade e eficiência no gerenciamento dos dados da lanchonete.
+
+---
+
 ## Escolha do PostgreSQL
 
 Optamos pelo **PostgreSQL** como o sistema gerenciador de banco de dados para este projeto devido a várias razões que se alinham com os requisitos do sistema:
